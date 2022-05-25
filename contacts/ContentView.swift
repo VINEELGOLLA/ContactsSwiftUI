@@ -41,6 +41,8 @@ struct ContentView: View {
                     
             }
                 .navigationTitle("Contacts List")
+                .listStyle(PlainListStyle())
+
         }
     }
         .alert(isPresented: $viewModel.isFailure, content: {

@@ -25,6 +25,8 @@ struct DetailScreen: View {
                 Text("Address: \(userContact?.location?.fullAddress ?? "")")
             }
             .navigationTitle("Contacts Detail")
+            .listStyle(PlainListStyle())
+
 
         }
     }
