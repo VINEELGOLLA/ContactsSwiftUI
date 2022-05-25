@@ -15,7 +15,6 @@ class ContactListViewModel: ObservableObject {
     var currentPage = 1
     var isFull: Bool = false
     
-    
     init() {
         isLoading = true
         self.fetchData()
@@ -44,14 +43,5 @@ class ContactListViewModel: ObservableObject {
             }
         })
     }
-    
-    func getNumberOfContacts() -> Int {
-        return contactData.count
-    }
-
-    func getUserContactFor(_ index:Int) -> userContact? {
-        return contactData[index]
-    }
-    
 }
 

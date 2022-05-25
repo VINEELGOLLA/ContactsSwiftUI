@@ -7,8 +7,7 @@
 
 import SwiftUI
 
-struct DetailScreen: View {
-    
+struct ContactDetail: View {
     var userContact : userContact?
     
     var body: some View {
@@ -26,14 +25,12 @@ struct DetailScreen: View {
             }
             .navigationTitle("Contacts Detail")
             .listStyle(PlainListStyle())
-
-
         }
     }
 }
 
 struct DetailScreen_Previews: PreviewProvider {
     static var previews: some View {
-        DetailScreen(userContact: nil)
+        ContactDetail(userContact: nil)
     }
 }

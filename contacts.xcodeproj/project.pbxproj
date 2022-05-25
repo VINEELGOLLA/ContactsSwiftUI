@@ -14,10 +14,10 @@
 		EFBFBEDB283C8893003FD97D /* contactListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBFBEDA283C8893003FD97D /* contactListViewModel.swift */; };
 		EFBFBEDE283C8909003FD97D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBFBEDD283C8909003FD97D /* NetworkManager.swift */; };
 		EFBFBEE1283C8935003FD97D /* ContactDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBFBEE0283C8935003FD97D /* ContactDataModel.swift */; };
-		EFBFBEE8283DB61A003FD97D /* UrlImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBFBEE7283DB61A003FD97D /* UrlImageView.swift */; };
+		EFBFBEE8283DB61A003FD97D /* ImageViewSmall.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBFBEE7283DB61A003FD97D /* ImageViewSmall.swift */; };
 		EFBFBEEC283DB74D003FD97D /* UrlImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBFBEEB283DB74D003FD97D /* UrlImageModel.swift */; };
 		EFBFBEF1283DE0A0003FD97D /* ImageCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBFBEF0283DE0A0003FD97D /* ImageCacheManager.swift */; };
-		EFBFBEF4283DE2A0003FD97D /* DetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBFBEF3283DE2A0003FD97D /* DetailScreen.swift */; };
+		EFBFBEF4283DE2A0003FD97D /* ContactDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBFBEF3283DE2A0003FD97D /* ContactDetail.swift */; };
 		EFBFBEF7283DE30A003FD97D /* ImageViewLarge.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBFBEF6283DE30A003FD97D /* ImageViewLarge.swift */; };
 /* End PBXBuildFile section */
 
@@ -31,10 +31,10 @@
 		EFBFBEDA283C8893003FD97D /* contactListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contactListViewModel.swift; sourceTree = "<group>"; };
 		EFBFBEDD283C8909003FD97D /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		EFBFBEE0283C8935003FD97D /* ContactDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDataModel.swift; sourceTree = "<group>"; };
-		EFBFBEE7283DB61A003FD97D /* UrlImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlImageView.swift; sourceTree = "<group>"; };
+		EFBFBEE7283DB61A003FD97D /* ImageViewSmall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewSmall.swift; sourceTree = "<group>"; };
 		EFBFBEEB283DB74D003FD97D /* UrlImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlImageModel.swift; sourceTree = "<group>"; };
 		EFBFBEF0283DE0A0003FD97D /* ImageCacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheManager.swift; sourceTree = "<group>"; };
-		EFBFBEF3283DE2A0003FD97D /* DetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailScreen.swift; sourceTree = "<group>"; };
+		EFBFBEF3283DE2A0003FD97D /* ContactDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetail.swift; sourceTree = "<group>"; };
 		EFBFBEF6283DE30A003FD97D /* ImageViewLarge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewLarge.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -68,9 +68,9 @@
 		EFBFBEC9283C87AC003FD97D /* contacts */ = {
 			isa = PBXGroup;
 			children = (
-				EFBFBEE7283DB61A003FD97D /* UrlImageView.swift */,
+				EFBFBEE7283DB61A003FD97D /* ImageViewSmall.swift */,
 				EFBFBEF6283DE30A003FD97D /* ImageViewLarge.swift */,
-				EFBFBEF3283DE2A0003FD97D /* DetailScreen.swift */,
+				EFBFBEF3283DE2A0003FD97D /* ContactDetail.swift */,
 				EFBFBECA283C87AC003FD97D /* contactsApp.swift */,
 				EFBFBECC283C87AC003FD97D /* ContentView.swift */,
 				EFBFBEDA283C8893003FD97D /* contactListViewModel.swift */,
@@ -165,13 +165,13 @@
 				EFBFBEDE283C8909003FD97D /* NetworkManager.swift in Sources */,
 				EFBFBEEC283DB74D003FD97D /* UrlImageModel.swift in Sources */,
 				EFBFBECD283C87AC003FD97D /* ContentView.swift in Sources */,
-				EFBFBEE8283DB61A003FD97D /* UrlImageView.swift in Sources */,
+				EFBFBEE8283DB61A003FD97D /* ImageViewSmall.swift in Sources */,
 				EFBFBEF1283DE0A0003FD97D /* ImageCacheManager.swift in Sources */,
 				EFBFBECB283C87AC003FD97D /* contactsApp.swift in Sources */,
 				EFBFBEF7283DE30A003FD97D /* ImageViewLarge.swift in Sources */,
 				EFBFBEE1283C8935003FD97D /* ContactDataModel.swift in Sources */,
 				EFBFBEDB283C8893003FD97D /* contactListViewModel.swift in Sources */,
-				EFBFBEF4283DE2A0003FD97D /* DetailScreen.swift in Sources */,
+				EFBFBEF4283DE2A0003FD97D /* ContactDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

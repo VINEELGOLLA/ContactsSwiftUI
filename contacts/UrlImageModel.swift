@@ -28,7 +28,6 @@ class UrlImageModel: ObservableObject {
         
         if let cacheImage  = imageCache.getImageFromUserWithURL(string: urlString) {
             self.image = cacheImage
-            print("from cache")
         }
         
         let url = URL(string: urlString)!
@@ -53,9 +52,6 @@ class UrlImageModel: ObservableObject {
                 self.imageCache.save(image: urlImage, forUrlString: urlString)
                 
                 self.image = urlImage
-                print("from url")
-
-            
         }
         }
         task.resume()

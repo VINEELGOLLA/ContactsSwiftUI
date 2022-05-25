@@ -11,7 +11,6 @@ struct ContentView: View {
     
     @ObservedObject var viewModel: ContactListViewModel = ContactListViewModel()
     
-    
     var body: some View {
         NavigationView {
             if viewModel.isLoading {
@@ -22,33 +21,28 @@ struct ContentView: View {
                 List {
                     ForEach(viewModel.contactData , id: \.id) { contact in
                         NavigationLink(
-                            destination: DetailScreen(userContact: contact),
+                            destination: ContactDetail(userContact: contact),
                             label: {
                                 HStack {
-                                    UrlImageView(urlString: contact.picture?.medium ?? "")
-                                    Text("\(contact.name?.getUserFullName ?? "lol")")
+                                    ImageViewSmall(urlString: contact.picture?.medium ?? "")
+                                    Text("\(contact.name?.getUserFullName ?? "")")
                                 }
                             }
-                            )}
-                    
+                        )}
                     if !viewModel.isFull {
                         Text("Downloading data.....")
                             .onAppear(perform: {
                                 viewModel.fetchData()
                             })
                     }
-                    
-                    
             }
                 .navigationTitle("Contacts List")
                 .listStyle(PlainListStyle())
-
         }
     }
         .alert(isPresented: $viewModel.isFailure, content: {
             Alert(title: Text("FAILURE"), message: Text("Please Try some time later"), dismissButton: .default(Text("Okay")))
         })
-
 }
 }
 

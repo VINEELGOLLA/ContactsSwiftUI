@@ -14,9 +14,7 @@ protocol Network {
 class NetworkManager: Network {
     
     static let shared = NetworkManager()
-    
-    private init() { }
-    
+        
     func fetchDataWith(pageNum: String, onCompletion : @escaping (Result<ContactListResponse?,Error>) -> Void) {
         
         let newUrl = "https://randomuser.me/api/?page=\(pageNum)&results=20&seed=abc"
