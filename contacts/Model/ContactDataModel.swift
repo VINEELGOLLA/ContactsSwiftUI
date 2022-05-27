@@ -124,7 +124,9 @@ struct Name: Codable {
     let title, first, last: String?
     
     var getUserFullName: String {
-        return "\(title ?? "") \(last ?? "") \(first ?? "")"
+//        return "\(title ?? "") \(last ?? "") \(first ?? "")"
+        return "\(last ?? "") \(first ?? "")"
+
     }
 }
 

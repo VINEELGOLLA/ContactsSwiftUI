@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		EFA4B72D284070EB007C15DD /* ResultState.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA4B72C284070EB007C15DD /* ResultState.swift */; };
+		EFA4B734284084C3007C15DD /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA4B733284084C3007C15DD /* SearchBarView.swift */; };
 		EFBFBECB283C87AC003FD97D /* contactsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBFBECA283C87AC003FD97D /* contactsApp.swift */; };
 		EFBFBECD283C87AC003FD97D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBFBECC283C87AC003FD97D /* ContentView.swift */; };
 		EFBFBECF283C87AD003FD97D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFBFBECE283C87AD003FD97D /* Assets.xcassets */; };
@@ -24,6 +25,7 @@
 
 /* Begin PBXFileReference section */
 		EFA4B72C284070EB007C15DD /* ResultState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultState.swift; sourceTree = "<group>"; };
+		EFA4B733284084C3007C15DD /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 		EFBFBEC7283C87AC003FD97D /* contacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = contacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFBFBECA283C87AC003FD97D /* contactsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contactsApp.swift; sourceTree = "<group>"; };
 		EFBFBECC283C87AC003FD97D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 				EFBFBEE7283DB61A003FD97D /* ImageViewSmall.swift */,
 				EFBFBEF3283DE2A0003FD97D /* ContactDetail.swift */,
 				EFBFBECC283C87AC003FD97D /* ContentView.swift */,
+				EFA4B733284084C3007C15DD /* SearchBarView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 				EFBFBEEC283DB74D003FD97D /* UrlImageModel.swift in Sources */,
 				EFBFBECD283C87AC003FD97D /* ContentView.swift in Sources */,
 				EFBFBEE8283DB61A003FD97D /* ImageViewSmall.swift in Sources */,
+				EFA4B734284084C3007C15DD /* SearchBarView.swift in Sources */,
 				EFA4B72D284070EB007C15DD /* ResultState.swift in Sources */,
 				EFBFBEF1283DE0A0003FD97D /* ImageCacheManager.swift in Sources */,
 				EFBFBECB283C87AC003FD97D /* contactsApp.swift in Sources */,

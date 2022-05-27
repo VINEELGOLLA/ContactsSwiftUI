@@ -9,6 +9,6 @@ import Foundation
 
 enum ResultState {
     case loading
-    case success(content:[userContact])
+    case success
     case failed(error: Error)
 }

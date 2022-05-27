@@ -12,6 +12,7 @@ struct contactsApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(ContactListViewModel())
         }
     }
 }
