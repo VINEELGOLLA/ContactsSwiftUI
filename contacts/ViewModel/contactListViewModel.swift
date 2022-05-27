@@ -8,15 +8,15 @@
 import Foundation
 
 class ContactListViewModel: ObservableObject {
-    @Published var contactData: [userContact] = []
-    @Published var isLoading: Bool = false
+    
+    private(set) var contactData: [userContact] = []
+    @Published var state: ResultState = .loading
     @Published var isFailure: Bool = false
     
     var currentPage = 1
     var isFull: Bool = false
     
     init() {
-        isLoading = true
         self.fetchData()
     }
     
@@ -26,7 +26,6 @@ class ContactListViewModel: ObservableObject {
                 switch result {
                 case .success(let data):
                     if let contactData = data, let userContactResults = contactData.results {
-                        self?.isLoading = false
                         self?.contactData.append(contentsOf: userContactResults)
                         if userContactResults.count < 20 {
                             self?.isFull = true
@@ -35,9 +34,10 @@ class ContactListViewModel: ObservableObject {
                                 self?.currentPage = currPage + 1
                             }
                         }
+                        self?.state = .success(content: self?.contactData ?? [] )
                     }
-                case .failure(_):
-                    self?.isLoading = false
+                case .failure(let error):
+                    self?.state = .failed(error: error)
                     self?.isFailure = true
                 }
             }
