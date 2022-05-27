@@ -8,10 +8,9 @@
 import Foundation
 
 // MARK: - CharcterDataModel
-struct ContactListResponse: Codable, Identifiable {
+struct ContactListResponse: Codable {
     let results: [userContact]?
     let info: Info?
-    let id: String = UUID().uuidString
 }
 
 // MARK: - Info
