@@ -16,11 +16,11 @@ struct SearchBarView: View {
             HStack {
                 TextField("Search Contact", text: $viewModel.searchQuery)
                     .foregroundColor(.black)
-                    .padding(.leading,24)
+                    .padding(.leading,40)
                     .onTapGesture {
                         self.isEditing = true
                     }
-                    .padding()
+                    .frame(height: 50)
                     .background(Color.white)
                     .cornerRadius(6)
                     .padding(.horizontal)
