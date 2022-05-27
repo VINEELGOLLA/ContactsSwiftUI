@@ -18,7 +18,10 @@ struct ContactView: View {
                     destination: ContactDetail(userContact: contact),
                     label: {
                         HStack {
-                            ImageViewSmall(urlString: contact.picture?.medium ?? "")
+                            ImageView(urlString: contact.picture?.medium ?? "")
+                                .scaledToFit()
+                                .frame(width: 100, height: 100, alignment: .center)
+                                .cornerRadius(8)
                             Text("\(contact.name?.getUserFullName ?? "")")
                                 .font(.title3)
                         }

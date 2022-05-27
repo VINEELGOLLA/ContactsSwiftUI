@@ -12,7 +12,9 @@ struct ContactDetail: View {
     
     var body: some View {
         VStack {
-            ImageViewLarge(urlString: userContact?.picture?.large ?? "")
+            ImageView(urlString: userContact?.picture?.large ?? "")
+                .scaledToFit()
+                .aspectRatio(contentMode: .fill)  
             Spacer()
             List {
                 Text("Name: \(userContact?.name?.getUserFullName ?? "")")
