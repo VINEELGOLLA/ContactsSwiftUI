@@ -28,6 +28,7 @@ struct ContentView: View {
                                     HStack {
                                         ImageViewSmall(urlString: contact.picture?.medium ?? "")
                                         Text("\(contact.name?.getUserFullName ?? "")")
+                                            .font(.title3)
                                     }
                                 }
                             )}

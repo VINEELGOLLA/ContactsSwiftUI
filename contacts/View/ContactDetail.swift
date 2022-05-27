@@ -13,8 +13,9 @@ struct ContactDetail: View {
     var body: some View {
         VStack {
             ImageViewLarge(urlString: userContact?.picture?.large ?? "")
+            Spacer()
             List {
-                Text("Name: \(userContact?.name?.first ?? "")")
+                Text("Name: \(userContact?.name?.getUserFullName ?? "")")
                 Text("Email: \(userContact?.email ?? "")")
 
                 Text("Phone Number: \(userContact?.phone ?? "")")
@@ -23,7 +24,7 @@ struct ContactDetail: View {
                 
                 Text("Address: \(userContact?.location?.fullAddress ?? "")")
             }
-            .navigationTitle("Contacts Detail")
+            .navigationBarTitle("\(userContact?.name?.first ?? "")", displayMode: .inline)
             .listStyle(PlainListStyle())
         }
     }

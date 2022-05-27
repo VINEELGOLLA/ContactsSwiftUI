@@ -19,7 +19,7 @@ struct ImageViewLarge: View {
         Image(uiImage: urlImageModel.image ?? ImageViewLarge.defaultImage!)
             .resizable()
             .scaledToFit()
-            
+            .aspectRatio(contentMode: .fill)            
     }
 }
 
